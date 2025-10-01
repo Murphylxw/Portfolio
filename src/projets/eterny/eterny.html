@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eterny Esport</title>
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+
+      <header class="fixed w-full bg-white shadow z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Portfolio</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="../../index.html" class="text-gray-900 hover:text-indigo-600">Accueil</a></li>
+        <li><a href="../../parcours.html" class="text-gray-900 hover:text-indigo-600">Parcours</a></li>
+        <li><a href="../../projets.html" class="text-gray-900 hover:text-indigo-600">Projets</a></li>
+        <li><a href="../../competences.html" class="text-gray-900 hover:text-indigo-600">Compétences</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 py-2">
+      <a href="../../index.html" class="block py-2">Accueil</a>
+      <a href="../../parcours.html" class="block py-2">Parcours</a>
+      <a href="../../projets.html" class="block py-2">Projets</a>
+      <a href="../../competences.html" class="block py-2">Compétences</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-r from-purple-900 via-gray-900 to-black">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Eterny Esport</h1>
+    <p class="text-lg md:text-xl text-gray-300 max-w-2xl">
+      Eterny Esport est une organisation française d’esport spécialisée dans les compétitions de TrackMania & Super Smash Bros Ultimate, reconnue pour sa participation à des tournois nationaux et internationaux et pour son engagement auprès d’une communauté de joueurs passionnés.
+    </p>
+    <div class="mt-6 flex gap-4">
+      <a href="#details" class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-md">Voir le projet</a>
+      <a href="https://x.com/EternyEsport" class="border border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white px-5 py-2 rounded-md">Voir le Twitter</a>
+    </div>
+  </section>
+
+  <!-- Présentation -->
+  <section id="details" class="py-16 px-6 md:px-20">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Image du projet -->
+      <img src="logo.jpg" alt="Aperçu projet" class="rounded-lg shadow-lg">
+      
+      <!-- Texte -->
+      <div>
+        <h2 class="text-3xl font-bold text-purple-400 mb-4">À propos du projet</h2>
+        <p class="text-gray-300 mb-6">
+            En tant que Coach, Manager & Joueur semi-professionnel chez Eterny Esport, j'ai eu l'opportunité de contribuer au développement et à la gestion d'une équipe compétitive dans le cadre d'une structure régulée par la loi 1901. Mon rôle comprenait l'organisation de sessions d'entraînement, la gestion des plannings des joueurs, ainsi que la création de stratégies de jeu pour maximiser nos performances en compétition.
+        </p>
+        <ul class="space-y-2 text-gray-200">
+          <li>✔️ Organisation de session d'entrainement</li>
+          <li>✔️ Gestion Plannings</li>
+          <li>✔️ Créations de stratégies</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Résultats / Screens -->
+  <section class="py-16 bg-gray-800 px-6 md:px-20">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-purple-400 mb-10">Aperçus du projet</h2>
+      <div class="flex  flex-row w-full">
+        <div class="p-4 w-3/3 flex">
+            <img src="win.jpg" class="rounded-lg shadow-lg w-1/3 h-64" alt="">
+            <img src="win2.jpg" class="rounded-lg shadow-lg w-1/3 h-80" alt="">
+            <img src="annonce.png" class="rounded-lg shadow-lg w-1/3 h-64" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-16 text-center px-6 bg-gradient-to-r from-purple-900 via-gray-900 to-black">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Tu veux en savoir plus ?</h2>
+    <p class="text-gray-300 mb-6">N’hésite pas à me contacter pour en discuter !</p>
+    <a href="mailto:lorenzofarruggio06@mail.com" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-md">
+      ✉️ Me contacter
+    </a>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets - Mon Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CSS perso -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-white shadow z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Portfolio</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-indigo-600">Accueil</a></li>
+        <li><a href="parcours.html" class="hover:text-indigo-600">Parcours</a></li>
+        <li><a href="projets.html" class="hover:text-indigo-600">Projets</a></li>
+        <li><a href="competences.html" class="hover:text-indigo-600">Compétences</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 py-2">
+      <a href="index.html" class="block py-2">Accueil</a>
+      <a href="parcours.html" class="block py-2">Parcours</a>
+      <a href="projets.html" class="block py-2">Projets</a>
+      <a href="competences.html" class="block py-2">Compétences</a>
+    </div>
+  </header>
+
+
+  <!-- Section Projets -->
+  <section class="bg-gray-100 py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-3xl font-bold mb-10 text-indigo-600">Mes Compétences</h1>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Développement Web</h4>
+          <p class="text-gray-600 mb-4">Full-Stack • TailWindCSS • JavaScript</p>
+          <p class="text-gray-400 mb-4">2 ans d'expérience</p>
+          <a href="#" class="text-indigo-600 hover:underline">Voir le détail →</a>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Développement Applications</h4>
+          <p class="text-gray-600 mb-4">Java • C# • Skript</p>
+          <p class="text-gray-400 mb-4">2 ans d'expérience</p>
+          <a href="#" class="text-indigo-600 hover:underline">Voir le détail →</a>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Base de données & Excel</h4>
+          <p class="text-gray-600 mb-4">SQL • VBA</p>
+          <p class="text-gray-400 mb-4">2 ans d'expérience</p>
+          <a href="#" class="text-indigo-600 hover:underline">Voir le détail →</a>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Montage vidéo</h4>
+          <p class="text-gray-600 mb-4">DaVinci • Derush • VFX • Montage</p>
+          <p class="text-gray-400 mb-4">4 ans d'expérience</p>
+          <a href="#" class="text-indigo-600 hover:underline">Voir le détail →</a>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Game Design</h4>
+          <p class="text-gray-600 mb-4">Création • Équilibrage • Testing • Dev. Anti-triche</p>
+          <p class="text-gray-400 mb-4">3 ans d'expérience</p>
+          <a href="#" class="text-indigo-600 hover:underline">Voir le détail →</a>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Managing & Coaching</h4>
+          <p class="text-gray-600 mb-4">Organisation • Gestion des plannings • Création de stratégies</p>
+          <p class="text-gray-400 mb-4">3 ans d'expérience</p>
+          <a href="#" class="text-indigo-600 hover:underline">Voir le détail →</a>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Montage Photo</h4>
+          <p class="text-gray-600 mb-4">Incrustation • Gestion des couleurs</p>
+          <p class="text-gray-400 mb-4">2 ans d'expérience</p>
+          <a href="#" class="text-indigo-600 hover:underline">Voir le détail →</a>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Système et Réseaux</h4>
+          <p class="text-gray-600 mb-4">Linux • Windows • VM</p>
+          <p class="text-gray-400 mb-4">2 ans d'expérience</p>
+          <a href="#" class="text-indigo-600 hover:underline">Voir le détail →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

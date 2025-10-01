@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lorenzo FARRUGGIO - Portfolio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Mon CSS perso -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-white shadow z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Portfolio</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-indigo-600">Accueil</a></li>
+        <li><a href="parcours.html" class="hover:text-indigo-600">Parcours</a></li>
+        <li><a href="projets.html" class="hover:text-indigo-600">Projets</a></li>
+        <li><a href="competences.html" class="hover:text-indigo-600">Compétences</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 py-2">
+      <a href="index.html" class="block py-2">Accueil</a>
+      <a href="parcours.html" class="block py-2">Parcours</a>
+      <a href="projets.html" class="block py-2">Projets</a>
+      <a href="competences.html" class="block py-2">Compétences</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+     <img src="logo.jpg" alt="logo.jpg" 
+       class="w-64 h-64 rounded-full shadow-lg mb-6 object-cover">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4"><span class="text-indigo-600">Lorenzo Farruggio</span></h2>
+    <p class="text-lg md:text-xl text-gray-600 max-w-xl">
+      Étudiant en 2e année de BTS SIO Option SLAM
+    </p>
+    <p class="text-lg md:text-l text-gray-400 max-w-xl">
+      Web • VBA • Applications
+    </p>
+    <br>
+    <div>
+      <a href="parcours.html" class="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Mon Parcours</a>
+      <a href="projets.html" class="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Mes Projets</a>
+      <a href="competences.html" class="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Mes Compétences</a>
+    </div>
+
+  </section>
+
+  <!-- JS Menu Burger -->
+  <script src="script.js"></script>
+
+</body>
+</html>

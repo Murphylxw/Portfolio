@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets - Mon Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CSS perso -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-white shadow z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Portfolio</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-indigo-600">Accueil</a></li>
+        <li><a href="parcours.html" class="hover:text-indigo-600">Parcours</a></li>
+        <li><a href="projets.html" class="hover:text-indigo-600">Projets</a></li>
+        <li><a href="competences.html" class="hover:text-indigo-600">Compétences</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 py-2">
+      <a href="index.html" class="block py-2">Accueil</a>
+      <a href="parcours.html" class="block py-2">Parcours</a>
+      <a href="projets.html" class="block py-2">Projets</a>
+      <a href="competences.html" class="block py-2">Compétences</a>
+    </div>
+  </header>
+
+  <!-- Section Présentation -->
+<section class="min-h-screen flex items-center justify-center bg-gray-900 text-white px-6">
+  <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+    
+    <!-- Avatar + Nom -->
+    <div class="text-center md:text-left">
+      <img src="logo.jpg" 
+        class="w-32 aspect-square object-cover rounded-full border-4 border-purple-600 mx-auto md:mx-0">
+
+      
+      <h1 class="mt-4 text-3xl font-bold">Lorenzo Farruggio</h1>
+      <p class="text-lg text-gray-300">Développeur full-stack</p>
+      <p class="text-sm text-gray-400">Base de donnée • Développement • Analyse</p>
+    </div>
+
+    <!-- Carte de présentation -->
+    <div class="bg-gray-800/70 p-6 rounded-xl max-w-lg">
+      <h2 class="text-xl font-bold text-purple-400 mb-4">Hey, c'est Lorenzo !</h2>
+      <p class="text-gray-200 mb-6">
+        Baignant dans les ordinateurs et les jeux vidéos depuis tout petit, j'ai toujours été proche des nouvelles technologies.
+        Ayant toujours été assez hésitant à me lancer dans le développement, le BTS SIO m'a permis de sauter le pas et d'ouvrir les
+        yeux sur ce domaine qui me passione. Voilà maintenant 2 ans que je code, et je compte bien continuer à apprendre et à me perfectionner dans ce domaine.
+      </p>
+      <div class="flex gap-4">
+        <a href="cv.pdf"
+           class="border border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white px-4 py-2 rounded-md">
+          Télécharger mon CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Section Formations -->
+  <section class="bg-gray-100 py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div>
+      <h1 class="text-3xl font-bold mb-10 text-indigo-600">Formations</h1>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Brevet</h4>
+          <p class="text-gray-400 mb-4">Collège Ponsard</p>
+          <p class="text-gray-600 mb-4">Mention très bien</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">BAC Général</h4>
+          <p class="text-gray-400 mb-4">Lycée Ella Fitzgérald</p>
+          <p class="text-gray-600 mb-4">Spé LLCE & HGGSP</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">BTS SIO</h4>
+          <p class="text-gray-400 mb-4">Lycée Ella Fitzgérald</p>
+          <p class="text-gray-400 mb-4">Option SLAM</p>
+        </div>
+      </div>
+      <div>
+        <h1 class="text-3xl font-bold mb-10 text-indigo-600">Projet Pro<Prog></Prog></h1>
+        <br>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Développeur</h4>
+          <p class="text-gray-400 mb-4">Lycée Ella Fitzgérald</p>
+          <p class="text-gray-400 mb-4">Option SLAM</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
