@@ -1,4 +1,3 @@
-
 const menuBtn = document.getElementById("menu-btn");
 const menu = document.getElementById("mobile-menu");
 
@@ -8,7 +7,7 @@ menuBtn.addEventListener("click", () => {
 
 // Carrousel des images
 document.addEventListener("DOMContentLoaded", () => {
-  const images = ["twitter.png", "messagefin.png"];
+  const images = ["login.png", "interne.png", "appli-crm.png","aboutus.png","macros.png"];
   let currentIndex = 0;
 
   const carouselImg = document.getElementById("carousel-img");
@@ -31,4 +30,3 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCarousel();
   });
 });
-

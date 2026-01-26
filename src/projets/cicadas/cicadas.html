@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PandoraUHC</title>
+  <title>Cicadas Gaming</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -30,14 +30,13 @@
 
   <!-- Hero Section -->
   <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-r from-purple-900 via-gray-900 to-black">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">PandoraUHC</h1>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Cicadas Gaming</h1>
     <p class="text-lg md:text-xl text-gray-300 max-w-2xl">
-      Né de la fusion de plusieurs serveurs Minecraft, PandoraUHC était une infrastructure communautaire proposant divers modes de jeu, principalement centrés sur le PvP et l’Ultra Hardcore (UHC). 
-      Le serveur a su rassembler une communauté fidèle grâce à son ambiance conviviale et à l’organisation régulière d’événements.
+      Cicadas Gaming est une structure e-sportive régulée par la loi 1901 mais également un gaming center situé à Toulon.
     </p>
     <div class="mt-6 flex gap-4">
       <a href="#details" class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-md">Voir le projet</a>
-      <a href="https://x.com/pandorauhc" class="border border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white px-5 py-2 rounded-md">Voir le Twitter</a>
+      <a href="https://x.com/CicadasGaming" class="border border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white px-5 py-2 rounded-md">Voir le Twitter</a>
     </div>
   </section>
 
@@ -46,20 +45,20 @@
     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       
       <!-- Image du projet -->
-      <img src="pandoralogo.jpg" alt="Aperçu projet" class="rounded-lg shadow-lg">
+      <img src="logo.jpg" alt="Aperçu projet" class="rounded-lg shadow-lg">
       
       <!-- Texte -->
       <div>
         <h2 class="text-3xl font-bold text-purple-400 mb-4">À propos du projet</h2>
         <p class="text-gray-300 mb-6">
-          Ayant été modérateur et helpeur sur PandoraUHC, j'ai eu l'opportunité de contribuer activement à la gestion et au développement de cette infrastructure de jeu communautaire. 
-          Mon rôle principal consistait à modérer les interactions entre les joueurs, assurer le respect des règles et offrir une assistance technique aux utilisateurs.
-          J'ai cependant également eu l'occasion de participer à des tâches de gestion de projet, de game design, ainsi que de testing et d'assistance au développement d'un système anti-triche.
+            En tant que Manager de l'équipe Valorant de Cicadas, j'ai eu la chance de contribuer à la mise en place de l'équipe. Bien que mon aventure avec Cicadas ait été de seulement 4 mois, j'ai eu l'opportunité d'élargir mon réseau professionnel suite à mon passage là-bas. 
+            Cicadas m'a permis de me faire connaitre sur le scène VRC (Valorant Regional Circuit) et également d'acquérir de nouvelles compétences grâce au suivis de joueurs performant au top niveau européen. La globalitié des joueurs que j'ai fréquenté ou rencontré lors d'entretien figurant tous dans le top 500 EU, je n'aurais aucun mal à rebondir par la suite.
+            Cicadas Gaming reste aujourd'hui ma meilleure aventure et mon expérience profesionnel dont je suis le plus fier.
         </p>
         <ul class="space-y-2 text-gray-200">
-          <li>✔️ Java</li>
-          <li>✔️ Game Design</li>
-          <li>✔️ Développement Système Anti-Triche</li>
+          <li>✔️ Organisation de session d'entrainement</li>
+          <li>✔️ Gestion Plannings</li>
+          <li>✔️ Entretien & Scouting</li>
         </ul>
       </div>
     </div>
@@ -70,20 +69,12 @@
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-purple-400 mb-10">Aperçus du projet</h2>
       <div class="flex items-center justify-center gap-6">
-        <button id="prev-btn" class="p-3 hover:bg-purple-700 rounded-lg transition">
-          <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-          </svg>
-        </button>
+        <button id="prev-btn" class="text-3xl text-purple-400 hover:text-purple-300 transition">❮</button>
         <div class="relative w-full max-w-2xl">
-          <img id="carousel-img" src="twitter.png" class="rounded-lg shadow-lg w-full h-96 object-contain" alt="Aperçu PandoraUHC">
-          <p id="image-counter" class="absolute bottom-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded text-sm">1 / 2</p>
+          <img id="carousel-img" src="annonce.png" class="rounded-lg shadow-lg w-full h-96 object-contain" alt="Aperçu projet">
         </div>
-        <button id="next-btn" class="p-3 hover:bg-purple-700 rounded-lg transition">
-          <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </button>
+        <p id="image-counter" class="text-gray-400 mt-4">1 / 4</p>
+        <button id="next-btn" class="text-3xl text-purple-400 hover:text-purple-300 transition">❯</button>
       </div>
     </div>
   </section>
@@ -96,7 +87,7 @@
       ✉️ Me contacter
     </a>
   </section>
-
   <script src="script.js"></script>
+
 </body>
 </html>

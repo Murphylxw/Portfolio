@@ -8,7 +8,7 @@ menuBtn.addEventListener("click", () => {
 
 // Carrousel des images
 document.addEventListener("DOMContentLoaded", () => {
-  const images = ["twitter.png", "messagefin.png"];
+  const images = ["annonce.png", "depart.png", "montwitter.png","sheet.png"];
   let currentIndex = 0;
 
   const carouselImg = document.getElementById("carousel-img");

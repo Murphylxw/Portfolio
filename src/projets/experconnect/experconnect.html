@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experconnect</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experconnect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="bg-gray-900 text-white">
+
+      <header class="fixed w-full bg-white shadow z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Portfolio</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="../../index.html" class="text-gray-900 hover:text-indigo-600">Accueil</a></li>
+        <li><a href="../../parcours.html" class="text-gray-900 hover:text-indigo-600">Parcours</a></li>
+        <li><a href="../../projets.html" class="text-gray-900 hover:text-indigo-600">Projets</a></li>
+        <li><a href="../../competences.html" class="text-gray-900 hover:text-indigo-600">Compétences</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 py-2">
+      <a href="../../index.html" class="block py-2">Accueil</a>
+      <a href="../../parcours.html" class="block py-2">Parcours</a>
+      <a href="../../projets.html" class="block py-2">Projets</a>
+      <a href="../../competences.html" class="block py-2">Compétences</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-r from-purple-900 via-gray-900 to-black">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white">Experconnect</h1>
+    <p class="text-lg md:text-xl text-white max-w-3xl leading-relaxed">
+      Plateforme de conseil et de mise en relation stratégique pour valoriser l'expertise des cadres seniors auprès des grands comptes (Alstom, EDF, Thalès).
+    </p>
+    <div class="mt-8 flex gap-4 flex-wrap justify-center">
+      <a href="#details" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition">Découvrir le projet</a>
+      <a href="https://experconnect.com/" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-semibold transition">En savoir plus</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="details" class="py-20 px-6 md:px-20 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-blue-900 mb-12 text-center">À propos du projet</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <img src="experconnect.png" alt="Logo Experconnect" class="rounded-lg shadow-lg">
+        
+        <div>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            En tant que Stagiaire Développeur Fullstack chez Experconnect, j'ai participé à divers projets visant à automatiser les tâches répétitives des directeurs tel que des tableaux Excel. J'ai également contribué au développement d'un site interne destiné à répertorier tous les scripts et outils développés par l'équipe technique pour les commerciaux et directeurs.
+          </p>
+          <p class="text-gray-700 mb-8 leading-relaxed">
+            Cette expérience m'a permis d'acquérir divers compétences techniques et profesionnelles. J'ai également appris à comprendre comment fonctionne le monde du travail en entreprise et à travailler sous demande particulières.
+          </p>
+          
+          <h3 class="text-xl font-semibold text-blue-900 mb-4">Projets réalisés</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <span class="text-blue-600 font-bold">→</span>
+              <span>Macros Excel</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-blue-600 font-bold">→</span>
+              <span>Développement du site interne</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-blue-600 font-bold">→</span>
+              <span>Déploiement d'une application web et configuration d'un VPS</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-blue-600 font-bold">→</span>
+              <span>Mise en place d'un agent IA qui analyse des contrats</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-20 bg-gray-50 px-6 md:px-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-blue-900 mb-12 text-center">Aperçu du projet</h2>
+      <div class="flex items-center justify-center gap-6">
+        <button id="prev-btn" class="p-3 hover:bg-blue-100 rounded-lg transition">
+          <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <div class="relative w-full max-w-2xl">
+          <img id="carousel-img" src="login.png" class="rounded-lg shadow-lg w-full h-96 object-contain" alt="Aperçu Experconnect">
+          <p id="image-counter" class="absolute bottom-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded text-sm">1 / 5</p>
+        </div>
+        <button id="next-btn" class="p-3 hover:bg-blue-100 rounded-lg transition">
+          <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-20 bg-white px-6 md:px-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-blue-900 mb-12 text-center">Compétences développées</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-blue-50 p-8 rounded-lg border-l-4 border-blue-600">
+          <h3 class="text-lg font-semibold text-blue-900 mb-3">Développement Web</h3>
+          <p class="text-gray-700">NodeJS - ExpressJS</p>
+        </div>
+        <div class="bg-blue-50 p-8 rounded-lg border-l-4 border-blue-600">
+          <h3 class="text-lg font-semibold text-blue-900 mb-3">Data</h3>
+          <p class="text-gray-700">VBA & Excel</p>
+        </div>
+        <div class="bg-blue-50 p-8 rounded-lg border-l-4 border-blue-600">
+          <h3 class="text-lg font-semibold text-blue-900 mb-3">Déploiement & VPS</h3>
+          <p class="text-gray-700">HTTP BASIC AUTH - NGINX - PM2 - CERTBOT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 text-center px-6 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+    <h2 class="text-4xl font-bold mb-4">Vous souhaitez en discuter ?</h2>
+    <p class="text-blue-100 mb-8 text-lg">N'hésitez pas à me contacter pour échanger sur ce projet et mes expériences.</p>
+    <a href="mailto:lorenzofarruggio06@mail.com" class="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold transition inline-block">
+      Me contacter
+    </a>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+/* style.css */
+
+/* Exemples : smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero section personnalisé */
+section.hero h2 {
+  transition: color 0.3s ease;
+}
+
+section.hero h2:hover {
+  color: #4f46e5; /* Indigo-600 hover */
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+  transition: all 0.3s ease;
+}
+
+/* style.css */
+
+/* Scroll fluide */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations custom pour les projets */
+section h1 {
+  transition: color 0.3s ease;
+}
+
+section h1:hover {
+  color: #4338ca; /* indigo-700 */
+}
+
+/* Mobile menu transition */
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+}
