@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Oserv Esport — Projet Valorant</title>
+    <meta name="description" content="Présentation du projet Valorant de l'association Oserv Esport. Objectifs, équipe, palmarès et calendrier." />
+    <style>
+        :root{
+            --bg:#0f1724; --card:#0b1220; --accent:#6ee7b7; --muted:#9aa4b2; --glass:rgba(255,255,255,0.03);
+            --maxw:1000px; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        html,body{height:100%}
+        body{
+            margin:0; background:linear-gradient(180deg,#071027 0%, #071a2b 60%); color:#e6eef6;
+            -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+            display:flex; justify-content:center; padding:40px 20px;
+        }
+        .container{width:100%;max-width:var(--maxw)}
+        header{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+        .logo{
+            width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#3dd5ff);display:flex;
+            align-items:center;justify-content:center;font-weight:700;color:#042022;font-size:20px;box-shadow:0 6px 20px rgba(0,0,0,0.5);
+            overflow:hidden;
+        }
+        .logo img{width:100%;height:100%;object-fit:cover;display:block}
+        /* Image helpers */
+        .thumb{width:80px;height:52px;border-radius:8px;object-fit:cover;flex-shrink:0}
+        .avatar{width:36px;height:36px;border-radius:999px;object-fit:cover;border:2px solid rgba(255,255,255,0.04)}
+        .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+        .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+        h1{margin:0;font-size:20px}
+        p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+        main{display:grid;grid-template-columns:1fr;gap:18px}
+        section.card{
+            background:linear-gradient(180deg,var(--card),rgba(6,10,20,0.6));
+            border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6);
+        }
+        .grid-2{display:grid;grid-template-columns:1fr;gap:12px}
+        @media(min-width:880px){ .grid-2{grid-template-columns:1fr 320px} }
+        h2{margin:0 0 10px;font-size:16px}
+        ul{margin:0;padding-left:18px;color:var(--muted)}
+        .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
+        .tourney{display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;background:var(--glass);margin-bottom:8px}
+        .badge{padding:4px 8px;border-radius:999px;background:rgba(255,255,255,0.04);font-size:12px;color:var(--accent)}
+        footer{margin-top:14px;color:var(--muted);font-size:13px;text-align:center}
+        .team-list{display:flex;flex-direction:column;gap:8px}
+        .cta{display:inline-block;margin-top:8px;padding:10px 14px;border-radius:10px;background:var(--accent);color:#032023;text-decoration:none;font-weight:600}
+        .small{font-size:13px;color:var(--muted)}
+    </style>
+</head>
+<body>
+    <div class="container" role="main">
+        <header>
+            <div class="logo" aria-hidden="true">
+                <img src="assets/logo.png" alt="Oserv Esport logo (remplacez par votre image)" />
+            </div>
+             <div>
+                 <h1>Oserv Esport — Projet Valorant</h1>
+                 <p class="lead">Présentation officielle du projet Valorant — Head OF Valorant : Head OF Valorant</p>
+             </div>
+         </header>
+
+        <main>
+            <div class="grid-2">
+                <section class="card" aria-labelledby="about-title">
+                    <h2 id="about-title">À propos de l'association</h2>
+                    <p class="meta">Oserv Esport est une association dédiée à la scène compétitive et amateur, soutenant la formation, la compétition et l'épanouissement des joueurs.</p>
+                    <ul>
+                        <li>Accompagnement des joueurs (coaching, préparation mentale, review VOD)</li>
+                        <li>Organisation d'événements locaux et participation à des LANs</li>
+                        <li>Promotion d'une culture d'équipe saine et professionnelle</li>
+                    </ul>
+                </section>
+
+                <section class="card" aria-labelledby="contact-title">
+                    <h2 id="contact-title">Contact & actions rapides</h2>
+                    <p class="small"><strong>Role :</strong> Head OF Valorant — responsable projet, recrutement et planning</p>
+                    <p class="small"><strong>Email :</strong> contact@oserv-esport.example (remplacez par votre adresse)</p>
+                    <a class="cta" href="#">Rejoindre le projet</a>
+                    <div style="margin-top:12px" class="small">Réseaux : Discord / Twitter / Instagram — ajoutez vos liens officiels</div>
+                </section>
+            </div>
+
+            <section class="card" aria-labelledby="project-title">
+                <h2 id="project-title">Présentation du projet Valorant</h2>
+                <p class="meta">Objectif : structurer une équipe compétitive Valorant capable de performer sur la scène régionale et nationale tout en développant les talents locaux.</p>
+                <ul>
+                    <li>Création d'une équipe principale (5+ remplaçants) et d'une structure academy</li>
+                    <li>Programme d'entraînement hebdomadaire : stratégie, aim training, scrims et VOD review</li>
+                    <li>Encadrement : coaching technique, analyste, fitness & préparation mentale</li>
+                </ul>
+            </section>
+
+            <section class="card" aria-labelledby="goals-title">
+                <h2 id="goals-title">Objectifs</h2>
+                <ul>
+                    <li>6–12 mois : stabiliser un roster compétitif et atteindre les phases finales des tournois régionaux</li>
+                    <li>12–24 mois : qualification pour des compétitions nationales et partenariats sponsor</li>
+                    <li>Long terme : pérenniser une structure academy et former des joueurs pro</li>
+                </ul>
+            </section>
+
+            <section class="card" aria-labelledby="past-title">
+                <h2 id="past-title">Participations — tournois passés</h2>
+                <p class="meta">Récapitulatif des participations récentes (exemples/format).</p>
+
+                <div class="tourney" role="article" aria-label="Tournoi local - Jan 2025">
+                    <div style="display:flex;align-items:center;gap:12px">
+                        <img class="thumb" src="assets/tournaments/local-jan2025.jpg" alt="Tournoi Local - Jan 2025" />
+                        <div>
+                            <strong>EVC — Mars 2026</strong>
+                            <div class="small">Format : 105 équipes</div>
+                        </div>
+                    </div>
+                     <div class="badge">Top ?</div>
+                 </div>
+
+                 <div class="tourney" role="article" aria-label="Open Régional - Mars 2025">
+                    <div style="display:flex;align-items:center;gap:12px">
+                        <img class="thumb" src="assets/tournaments/open-mars2025.jpg" alt="Open Régional - Mars 2025" />
+                        <div>
+                            <strong>One Tap Series — Mars 2026</strong>
+                            <div class="small">Tournois organisé par Oserv Esport</div>
+                        </div>
+                    </div>
+                     <div class="badge">Quart</div>
+                 </div>
+
+                 <div class="tourney" role="article" aria-label="LAN Amicale - Mai 2025">
+                    <div style="display:flex;align-items:center;gap:12px">
+                        <img class="thumb" src="assets/tournaments/lan-mai2025.jpg" alt="LAN Amicale - Mai 2025" />
+                        <div>
+                            <strong>Gamers Assembly - Avril 2026</strong>
+                            <div class="small">Expérience LAN & mise en place de routines</div>
+                        </div>
+                    </div>
+                     <div class="badge">Participation</div>
+                 </div>
+            </section>
+
+            <section class="card" aria-labelledby="upcoming-title">
+                <h2 id="upcoming-title">Tournois à venir</h2>
+                <p class="meta">Planning et priorités pour les prochaines compétitions.</p>
+
+                <div class="tourney" role="article" aria-label="Open Valorant - Juin 2025">
+                    <div>
+                        <strong>OTF Valorant Spike Tour</strong>
+                        <div class="small">Qualification aux Up & Down</div>
+                    </div>
+                    <div class="badge">Attente des dates</div>
+                </div>
+
+                <div class="tourney" role="article" aria-label="LAN Régionale - Août 2025">
+                    <div>
+                        <strong>Lyon Esport</strong>
+                        <div class="small">Préparation LAN - Objectif top 10</div>
+                    </div>
+                    <div class="badge">En préparation</div>
+                </div>
+
+                <div class="tourney" role="article" aria-label="Circuit National - TBA">
+                    <div>
+                        <strong>Valorant Premier</strong>
+                        <div class="small">Qualification aux Up & Down</div>
+                    </div>
+                    <div class="badge">Cible</div>
+                </div>
+            </section>
+
+            <section class="card" aria-labelledby="team-title">
+                <h2 id="team-title">Équipe & rôles</h2>
+                <p class="meta">Structure conseillée pour la saison</p>
+                <div class="team-list">
+                        <div style="display:flex;align-items:center;gap:10px">
+                            <img class="avatar" src="assets/team/head.png" alt="Head of Valorant" />
+                            <div><strong>Head OF Valorant</strong> — coordination générale, recrutement</div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:10px">
+                            <img class="avatar" src="assets/team/coach.png" alt="Coach principal" />
+                            <div><strong>Coach principal</strong> — stratégie, préparation scrims</div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:10px">
+                            <img class="avatar" src="assets/team/analyst.png" alt="Analyste" />
+                            <div><strong>Analyste</strong> — VOD review, scouting adverses</div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:10px">
+                            <img class="avatar" src="assets/team/captain.png" alt="Capitaine" />
+                            <div><strong>Capitaine</strong> — shotcaller in-game</div>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:10px">
+                            <img class="avatar" src="assets/team/roster.png" alt="Roster" />
+                            <div><strong>Roster</strong> — 5 titulaires + remplaçants</div>
+                        </div>
+                     </div>
+                 </section>
+
+             <section class="card" aria-labelledby="gallery-title">
+                <h2 id="gallery-title">Galerie</h2>
+                <p class="meta">Ajoute ici des photos de LAN, screenshots d'équipe ou visuels de sponsors.</p>
+                <div class="gallery" aria-hidden="false">
+                    <img src="assets/gallery/01.jpg" alt="Galerie image 1" />
+                    <img src="assets/gallery/02.jpg" alt="Galerie image 2" />
+                    <img src="assets/gallery/03.jpg" alt="Galerie image 3" />
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>Pour intégrer le projet, proposer un sponsor ou organiser un bootcamp : contact@oserv-esport.example</div>
+            <div style="margin-top:6px" class="small">Cette page est un modèle — personnalisez les noms, dates et liens avant publication.</div>
+        </footer>
+    </div>
+</body>
+</html>
