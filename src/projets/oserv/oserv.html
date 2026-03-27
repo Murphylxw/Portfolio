@@ -216,7 +216,7 @@
             <img src="Pax.png" alt="Pax" class="w-20 h-20 rounded-full object-cover border-2 border-white/5 mb-3" />
             <h3 class="text-sm font-semibold">Pax</h3>
             <div class="text-xs text-[#9aa4b2] mb-2">IGL & Smoker</div>
-            <p class="text-xs text-[#cbd5e1]">Shotcaller principal et leader in-game.</p>
+            <p class="text-xs text-[#cbd5e1]">Le gros cerveau.</p>
           </div>
  
           <!-- Card: Nev -->
@@ -250,6 +250,14 @@
             <div class="text-xs text-[#9aa4b2] mb-2">Duelist</div>
             <p class="text-xs text-[#cbd5e1]">Entry (Atteint d'Hyperactivité)</p>
           </div>
+          
+          <!-- Card: Piou -->
+          <div class="bg-[#0b0b0b] border border-white/5 rounded-lg p-4 shadow-lg flex flex-col items-center text-center">
+            <img src="piou.png" alt="Piou" class="w-20 h-20 rounded-full object-cover border-2 border-white/5 mb-3" />
+            <h3 class="text-sm font-semibold">Piou</h3>
+            <div class="text-xs text-[#9aa4b2] mb-2">Remplaçant</div>
+            <p class="text-xs text-[#cbd5e1]">Véritable couteau Suisse</p>
+          </div>
 
         </div>
       </section>
@@ -257,22 +265,24 @@
       <!-- Gallery -->
       <section class="rounded-xl p-5 bg-[#0b1220] shadow-[0_6px_18px_rgba(2,6,23,0.6)]">
         <h2 class="text-base font-semibold mb-2">Galerie</h2>
-        <p class="text-sm text-[#9aa4b2] mb-3">Photos de LAN, screenshots d'équipe ou visuels de sponsors.</p>
+        <p class="text-sm text-[#9aa4b2] mb-3">Quelques photos réprésentatives de notre travail en attendant les premières photos IRL.</p>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <img src="assets/gallery/01.jpg" alt="Galerie image 1" class="w-full h-28 object-cover rounded-md" />
-          <img src="assets/gallery/02.jpg" alt="Galerie image 2" class="w-full h-28 object-cover rounded-md" />
-          <img src="assets/gallery/03.jpg" alt="Galerie image 3" class="w-full h-28 object-cover rounded-md" />
+          <img src="welcome.png" data-caption="Bienvenue — réunion d'équipe" alt="Galerie image 1" class="zoomable w-full h-36 sm:h-28 object-cover rounded-md cursor-pointer transition-transform hover:scale-105" />
+          <img src="planning.png" data-caption="Planning & roadmap" alt="Galerie image 2" class="zoomable w-full h-36 sm:h-28 object-cover rounded-md cursor-pointer transition-transform hover:scale-105" />
+          <img src="reu.png" data-caption="Compte-rendu réunion" alt="Galerie image 3" class="zoomable w-full h-36 sm:h-28 object-cover rounded-md cursor-pointer transition-transform hover:scale-105" />
         </div>
       </section>
+    
+    <!-- Lightbox / modal -->
+    <div id="lightbox" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
+      <div class="relative max-w-4xl w-full">
+        <button id="lb-close" aria-label="Fermer" class="absolute top-2 right-2 text-white bg-black/40 hover:bg-black/60 rounded-full p-2">✕</button>
+        <img id="lb-image" src="" alt="" class="w-full h-auto rounded-md shadow-lg" />
+        <div id="lb-caption" class="mt-2 text-sm text-[#cbd5e1] text-center"></div>
+      </div>
+    </div>
  
        </main>
- 
-       <!-- Footer -->
-       <footer class="mt-8 text-center text-sm text-[#9aa4b2]">
-         <div>Pour intégrer le projet, proposer un sponsor ou organiser un bootcamp : contact@oserv-esport.example</div>
-         <div class="mt-2">Cette page est un modèle — personnalisez les noms, dates et liens avant publication.</div>
-       </footer>
- 
      </div>
  
      <script>
@@ -280,8 +290,39 @@
     const btn = document.getElementById('menu-btn');
     const mobile = document.getElementById('mobile-menu');
     btn?.addEventListener('click', () => {
-      const open = mobile.classList.toggle('hidden') ? false : true;
-      btn.setAttribute('aria-expanded', String(open));
+      const opened = !mobile.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(opened));
+    });
+ 
+    // Lightbox (click to enlarge)
+    const zoomables = document.querySelectorAll('.zoomable');
+    const lightbox = document.getElementById('lightbox');
+    const lbImage = document.getElementById('lb-image');
+    const lbCaption = document.getElementById('lb-caption');
+    const lbClose = document.getElementById('lb-close');
+ 
+    function openLightbox(src, caption, alt) {
+      lbImage.src = src;
+      lbImage.alt = alt || '';
+      lbCaption.textContent = caption || '';
+      lightbox.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lightbox.classList.add('hidden');
+      lbImage.src = '';
+      document.body.style.overflow = '';
+    }
+ 
+    zoomables.forEach(img => {
+      img.addEventListener('click', () => openLightbox(img.src, img.dataset.caption, img.alt));
+    });
+    lbClose?.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
     });
   </script>
 </body>
