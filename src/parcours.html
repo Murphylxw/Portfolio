@@ -11,25 +11,27 @@
   <!-- CSS perso -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-slate-950 text-white">
 
   <!-- Navbar -->
-  <header class="fixed w-full bg-white shadow z-50">
-    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-indigo-600">Portfolio</h1>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="../index.html" class="hover:text-indigo-600">Accueil</a></li>
-        <li><a href="parcours.html" class="hover:text-indigo-600">Parcours</a></li>
-        <li><a href="projets.html" class="hover:text-indigo-600">Projets</a></li>
-        <li><a href="competences.html" class="hover:text-indigo-600">Compétences</a></li>
+  <header class="bg-slate-900 shadow-lg sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        Portfolio
+      </h1>
+      <ul class="hidden md:flex gap-8">
+        <li><a href="../index.html" class="hover:text-blue-400 transition">Accueil</a></li>
+        <li><a href="parcours.html" class="hover:text-blue-400 transition">Parcours</a></li>
+        <li><a href="projets.html" class="hover:text-blue-400 transition">Projets</a></li>
+        <li><a href="competences.html" class="hover:text-blue-400 transition">Compétences</a></li>
       </ul>
-      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+      <button id="menu-btn" class="md:hidden text-2xl hover:text-blue-400 transition" aria-label="Ouvrir le menu">☰</button>
     </nav>
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 py-2">
-      <a href="../index.html" class="block py-2">Accueil</a>
-      <a href="parcours.html" class="block py-2">Parcours</a>
-      <a href="projets.html" class="block py-2">Projets</a>
-      <a href="competences.html" class="block py-2">Compétences</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 px-6 pb-4">
+      <a href="../index.html" class="block py-2 hover:text-blue-400 transition">Accueil</a>
+      <a href="parcours.html" class="block py-2 hover:text-blue-400 transition">Parcours</a>
+      <a href="projets.html" class="block py-2 hover:text-blue-400 transition">Projets</a>
+      <a href="competences.html" class="block py-2 hover:text-blue-400 transition">Compétences</a>
     </div>
   </header>
 
@@ -67,72 +69,82 @@
 </section>
 
   <!-- Section Formations -->
-  <section class="bg-gray-100 py-20">
-    <div class="max-w-6xl mx-auto px-4">
+  <section class="bg-slate-950 py-20">
+    <div class="max-w-6xl mx-auto px-4 space-y-16">
+
       <div>
-        <h1 class="text-3xl font-bold mb-10 text-indigo-600">Formations</h1>
+        <h2 class="text-3xl font-bold mb-10 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent inline-block">Formations</h2>
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-2">Brevet</h4>
-            <p class="text-gray-400 mb-4">Collège Ponsard</p>
-            <p class="text-gray-600 mb-4">Mention très bien</p>
-            <p class="text-gray-400 mb-4">Fut un temps j'étais un bon élève ! </p>
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-blue-500/60 hover:shadow-blue-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-500 to-purple-600"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">Brevet</h4>
+            <p class="text-slate-400 mb-4">Collège Ponsard</p>
+            <p class="text-slate-200 mb-4">Mention très bien</p>
+            <p class="text-slate-400">Fut un temps j'étais un bon élève ! </p>
           </div>
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-2">BAC Général</h4>
-            <p class="text-gray-400 mb-4">Lycée Ella Fitzgérald</p>
-            <p class="text-gray-600 mb-4">Spé LLCE & HGGSP</p>
-            <p class="text-gray-400 mb-4">Oui je me suis perdu.</p>
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-blue-500/60 hover:shadow-blue-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-500 to-purple-600"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">BAC Général</h4>
+            <p class="text-slate-400 mb-4">Lycée Ella Fitzgérald</p>
+            <p class="text-slate-200 mb-4">Spé LLCE & HGGSP</p>
+            <p class="text-slate-400">Oui je me suis perdu.</p>
           </div>
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-2">BTS SIO</h4>
-            <p class="text-gray-400 mb-4">Lycée Ella Fitzgérald</p>
-            <p class="text-gray-600 mb-4">Option SLAM</p>
-            <p class="text-gray-400 mb-4">Délégué les 2 ans.</p>
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-blue-500/60 hover:shadow-blue-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-500 to-purple-600"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">BTS SIO</h4>
+            <p class="text-slate-400 mb-4">Lycée Ella Fitzgérald</p>
+            <p class="text-slate-200 mb-4">Option SLAM</p>
+            <p class="text-slate-400">Délégué les 2 ans.</p>
           </div>
         </div>
-        <br>
-          <div>
-            <h1 class="text-3xl font-bold mb-10 text-indigo-600">Post-BTS</h1>
-            <div class="grid md:grid-cols-3 gap-8">
-              <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold mb-2">Bachelor 3e année</h4>
-                <p class="text-gray-400 mb-4">Digital Campus Paris (11e)</p>
-                <p class="text-gray-400 mb-4">Si j'ai mon BTS ahah.</p>
-              </div>
-              <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold mb-2">Master ?</h4>
-                <p class="text-gray-400 mb-4">Si j'ai la détermination ..?</p>
-                <p class="text-gray-400 mb-4">J'y crois peu.</p>
-              </div>
-              <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold mb-2">Trouver un travail</h4>
-                <p class="text-gray-400 mb-4">J'aurais pu dire "Ne pas finir sous un pont".</p>
-                <p class="text-gray-400 mb-4">En vrai j'veux juste avoir des sous pour continuer de manger.</p>
-              </div>
-            </div>
+      </div>
+
+      <div>
+        <h2 class="text-3xl font-bold mb-10 bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent inline-block">Post-BTS</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-purple-500/60 hover:shadow-purple-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-purple-500 to-pink-600"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">Bachelor 3e année</h4>
+            <p class="text-slate-400 mb-4">Digital Campus Paris (11e)</p>
+            <p class="text-slate-400">Si j'ai mon BTS ahah.</p>
           </div>
-        <br>
-          <div>
-            <h1 class="text-3xl font-bold mb-10 text-indigo-600">Débouchée Finale</h1>
-            <div class="grid md:grid-cols-3 gap-8">
-              <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold mb-2">Développeur Full-Stack</h4>
-                <p class="text-gray-400 mb-4">Du full-stack quoi...?</p>
-                <p class="text-gray-400 mb-4">Oui c'est la solution pour ceux qui savent pas quoi faire...</p>
-              </div>
-              <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold mb-2">N'importe quoi dans l'esport.</h4>
-                <p class="text-gray-400 mb-4">Je suis prêt à chauffer les gourdes.</p>
-                <p class="text-gray-400 mb-4">Vraiment je rigole pas.</p>
-              </div>
-              <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold mb-2">Développeur Applications</h4>
-                <p class="text-gray-400 mb-4">Faire des applis ou des jeux...?</p>
-                <p class="text-gray-400 mb-4">Si vous avez des contacts chez Riot Games ou quoi svp..?</p>
-              </div>
-            </div>
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-purple-500/60 hover:shadow-purple-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-purple-500 to-pink-600"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">Master ?</h4>
+            <p class="text-slate-400 mb-4">Si j'ai la détermination ..?</p>
+            <p class="text-slate-400">J'y crois peu.</p>
           </div>
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-purple-500/60 hover:shadow-purple-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-purple-500 to-pink-600"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">Trouver un travail</h4>
+            <p class="text-slate-400 mb-4">J'aurais pu dire "Ne pas finir sous un pont".</p>
+            <p class="text-slate-400">En vrai j'veux juste avoir des sous pour continuer de manger.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-3xl font-bold mb-10 bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent inline-block">Débouchée Finale</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-pink-500/60 hover:shadow-pink-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-pink-500 to-blue-500"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">Développeur Full-Stack</h4>
+            <p class="text-slate-400 mb-4">Du full-stack quoi...?</p>
+            <p class="text-slate-400">Oui c'est la solution pour ceux qui savent pas quoi faire...</p>
+          </div>
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-pink-500/60 hover:shadow-pink-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-pink-500 to-blue-500"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">N'importe quoi dans l'esport.</h4>
+            <p class="text-slate-400 mb-4">Je suis prêt à chauffer les gourdes.</p>
+            <p class="text-slate-400">Vraiment je rigole pas.</p>
+          </div>
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-pink-500/60 hover:shadow-pink-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-pink-500 to-blue-500"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">Développeur Applications</h4>
+            <p class="text-slate-400 mb-4">Faire des applis ou des jeux...?</p>
+            <p class="text-slate-400">Si vous avez des contacts chez Riot Games ou quoi svp..?</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

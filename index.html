@@ -4,54 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lorenzo FARRUGGIO - Portfolio</title>
-  
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!-- Mon CSS perso -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-slate-950 text-white">
 
   <!-- Navbar -->
-  <header class="fixed w-full bg-white shadow z-50">
-    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-indigo-600">Portfolio</h1>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="../index.html" class="hover:text-indigo-600">Accueil</a></li>
-        <li><a href="src/parcours.html" class="hover:text-indigo-600">Parcours</a></li>
-        <li><a href="src/projets.html" class="hover:text-indigo-600">Projets</a></li>
-        <li><a href="src/competences.html" class="hover:text-indigo-600">Compétences</a></li>
+  <header class="bg-slate-900 shadow-lg sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        Portfolio
+      </h1>
+      <ul class="hidden md:flex gap-8">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Accueil</a></li>
+        <li><a href="src/parcours.html" class="hover:text-blue-400 transition">Parcours</a></li>
+        <li><a href="src/projets.html" class="hover:text-blue-400 transition">Projets</a></li>
+        <li><a href="src/competences.html" class="hover:text-blue-400 transition">Compétences</a></li>
       </ul>
-      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+      <button id="menu-btn" class="md:hidden text-2xl hover:text-blue-400 transition" aria-label="Ouvrir le menu">☰</button>
     </nav>
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 py-2">
-      <a href="../index.html" class="block py-2">Accueil</a>
-      <a href="src/parcours.html" class="block py-2">Parcours</a>
-      <a href="src/projets.html" class="block py-2">Projets</a>
-      <a href="src/competences.html" class="block py-2">Compétences</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 px-6 pb-4">
+      <a href="index.html" class="block py-2 hover:text-blue-400 transition">Accueil</a>
+      <a href="src/parcours.html" class="block py-2 hover:text-blue-400 transition">Parcours</a>
+      <a href="src/projets.html" class="block py-2 hover:text-blue-400 transition">Projets</a>
+      <a href="src/competences.html" class="block py-2 hover:text-blue-400 transition">Compétences</a>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-     <img src="src/projets/oserv/moi.png" alt="logo.jpg" 
-       class="w-64 h-64 rounded-full shadow-lg mb-6 object-cover">
-    <h2 class="text-4xl md:text-6xl font-bold mb-4"><span class="text-indigo-600">Lorenzo "murphy" Farruggio</span></h2>
-    <p class="text-lg md:text-xl text-gray-600 max-w-xl">
-      Étudiant en 2e année de BTS SIO Option SLAM
-    </p>
-    <p class="text-lg md:text-l text-gray-400 max-w-xl">
-      Passionné par le développement, j'essaie de lier mon quotidien dans l'esport à mes études.
-    </p>
-    <br>
-    <div>
-      <a href="src/parcours.html" class="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Mon Parcours</a>
-      <a href="src/projets.html" class="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Mes Projets</a>
-      <a href="src/competences.html" class="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Mes Compétences</a>
-    </div>
+  <section class="min-h-screen flex items-center justify-center px-6 py-16">
+    <div class="text-center flex flex-col items-center">
 
+      <!-- Portrait avec contour dégradé -->
+      <div class="p-1 rounded-full bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/40 mb-10">
+        <img src="src/projets/oserv/moi.png" alt="Portrait de Lorenzo Farruggio"
+             class="w-56 h-56 md:w-64 md:h-64 rounded-full object-cover border-4 border-slate-950">
+      </div>
+
+      <h2 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        Lorenzo « murphy » Farruggio
+      </h2>
+
+      <p class="text-xl md:text-2xl text-slate-300 mb-3 max-w-2xl">
+        Diplômé d’un BTS SIO option SLAM
+      </p>
+      <p class="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl">
+        Passionné par le développement, l’esport et le gaming, j’essaie de lier les trois pour vivre la vie dont je rêve.
+      </p>
+
+      <div class="flex gap-6 justify-center flex-wrap">
+        <a href="src/parcours.html" class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition">
+          Mon parcours
+        </a>
+        <a href="src/projets.html" class="inline-block bg-gradient-to-r from-purple-500 to-pink-600 px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition">
+          Mes projets
+        </a>
+        <a href="src/competences.html" class="inline-block bg-gradient-to-r from-pink-500 to-blue-500 px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-pink-500/50 transition">
+          Mes compétences
+        </a>
+      </div>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 py-8 px-6 text-center text-slate-400">
+    <p>&copy; 2026 Lorenzo Farruggio. Tous droits réservés.</p>
+  </footer>
 
   <!-- JS Menu Burger -->
   <script src="src/script.js"></script>

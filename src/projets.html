@@ -11,47 +11,49 @@
   <!-- CSS perso -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-slate-950 text-white">
 
   <!-- Navbar -->
-  <header class="fixed w-full bg-white shadow z-50">
-    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-indigo-600">Portfolio</h1>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="../index.html" class="hover:text-indigo-600">Accueil</a></li>
-        <li><a href="parcours.html" class="hover:text-indigo-600">Parcours</a></li>
-        <li><a href="projets.html" class="hover:text-indigo-600">Projets</a></li>
-        <li><a href="competences.html" class="hover:text-indigo-600">Compétences</a></li>
+  <header class="bg-slate-900 shadow-lg sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        Portfolio
+      </h1>
+      <ul class="hidden md:flex gap-8">
+        <li><a href="../index.html" class="hover:text-blue-400 transition">Accueil</a></li>
+        <li><a href="parcours.html" class="hover:text-blue-400 transition">Parcours</a></li>
+        <li><a href="projets.html" class="hover:text-blue-400 transition">Projets</a></li>
+        <li><a href="competences.html" class="hover:text-blue-400 transition">Compétences</a></li>
       </ul>
-      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+      <button id="menu-btn" class="md:hidden text-2xl hover:text-blue-400 transition" aria-label="Ouvrir le menu">☰</button>
     </nav>
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 py-2">
-      <a href="../index.html" class="block py-2">Accueil</a>
-      <a href="parcours.html" class="block py-2">Parcours</a>
-      <a href="projets.html" class="block py-2">Projets</a>
-      <a href="competences.html" class="block py-2">Compétences</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 px-6 pb-4">
+      <a href="../index.html" class="block py-2 hover:text-blue-400 transition">Accueil</a>
+      <a href="parcours.html" class="block py-2 hover:text-blue-400 transition">Parcours</a>
+      <a href="projets.html" class="block py-2 hover:text-blue-400 transition">Projets</a>
+      <a href="competences.html" class="block py-2 hover:text-blue-400 transition">Compétences</a>
     </div>
   </header>
 
-
   <!-- Section Projets -->
-  <section class="bg-gray-100 py-20">
+  <section class="bg-slate-950 py-20">
     <div class="max-w-6xl mx-auto px-4">
-      <h1 class="text-3xl font-bold mb-10 text-indigo-600">Mes Projets & Expériences</h1>
+      <h1 class="text-3xl font-bold mb-10 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent inline-block">Mes Projets & Expériences</h1>
 
       <!-- Projets Professionnel -->
       <div class="mb-12">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-indigo-600">Expériences Professionnel</h2>
+        <h2 class="text-2xl font-bold mb-6 pb-3 border-b border-slate-800 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Expériences Professionnel</h2>
         <div class="grid md:grid-cols-1 gap-8">
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition flex items-start gap-4">
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-blue-500/60 hover:shadow-blue-500/30 transition flex items-start gap-4">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-500 to-purple-600"></div>
             <a href="projets/experconnect/experconnect.html" class="flex-shrink-0">
-              <img src="projets/experconnect/experconnect.png" alt="Logo Experconnect" class="w-16 h-16 object-contain rounded" />
+              <img src="projets/experconnect/experconnect.png" alt="Logo Experconnect" class="w-16 h-16 object-contain rounded ring-1 ring-slate-700" />
             </a>
             <div>
-              <h4 class="text-xl font-semibold mb-2">Experconnect</h4>
-              <p class="text-gray-600 mb-4">Stage de première & deuxième année</p>
-              <p class="text-gray-400 mb-4">VBA & Excel • React & NodeJS • Déploiement & config NGINX  </p>
-              <a href="projets/experconnect/experconnect.html" class="text-indigo-600 hover:underline">Voir le détail →</a>
+              <h4 class="text-xl font-semibold text-white mb-2">Experconnect</h4>
+              <p class="text-slate-200 mb-4">Stage de première & deuxième année</p>
+              <p class="text-slate-400 mb-4">VBA & Excel • React & NodeJS • Déploiement & config NGINX  </p>
+              <a href="projets/experconnect/experconnect.html" class="text-blue-400 hover:text-purple-400 hover:underline transition">Voir le détail →</a>
             </div>
           </div>
         </div>
@@ -59,91 +61,112 @@
 
       <!-- Projets de cours -->
       <div class="mb-12">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-indigo-600">Projets de cours</h2>
+        <h2 class="text-2xl font-bold mb-6 pb-3 border-b border-slate-800 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Projets de cours</h2>
         <div class="grid md:grid-cols-1 gap-8">
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-2">Gourmetise</h4>
-            <p class="text-gray-600 mb-4">Création d'un concours fictif impliquant des boulangeries notées par des juges.</p>
-            <p class="text-gray-400 mb-4">Co-Working • Web • Mobile • BDD</p>
-            <!--<a href="projets/gourmetise/gourmetise.html" class="text-indigo-600 hover:underline">Voir le détail →</a>-->
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-purple-500/60 hover:shadow-purple-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-purple-500 to-pink-600"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">Gourmetise</h4>
+            <p class="text-slate-200 mb-4">Création d'un concours fictif impliquant des boulangeries notées par des juges.</p>
+            <p class="text-slate-400 mb-4">Co-Working • Web • Mobile • BDD</p>
+            <!--<a href="projets/gourmetise/gourmetise.html" class="text-blue-400 hover:text-purple-400 hover:underline transition">Voir le détail →</a>-->
           </div>
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-2">Scrabble</h4>
-            <p class="text-gray-600 mb-4">Création d'un mini-jeu WPF visant à reproduire une partie de scrabble entre 2 joueurs.</p>
-            <p class="text-gray-400 mb-4">Co-Working • Figma • BDD • C# </p>
-            <!--<a href="projets/scrabble/scrabble.html" class="text-indigo-600 hover:underline">Voir le détail →</a>-->
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-purple-500/60 hover:shadow-purple-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-purple-500 to-pink-600"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">Scrabble</h4>
+            <p class="text-slate-200 mb-4">Création d'un mini-jeu WPF visant à reproduire une partie de scrabble entre 2 joueurs.</p>
+            <p class="text-slate-400 mb-4">Co-Working • Figma • BDD • C# </p>
+            <!--<a href="projets/scrabble/scrabble.html" class="text-blue-400 hover:text-purple-400 hover:underline transition">Voir le détail →</a>-->
           </div>
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-2">Multibureau</h4>
-            <p class="text-gray-600 mb-4">Création d'une entreprise virtuel encadrant base de donnée, site web, app WPF, figma, notion...</p>
-            <p class="text-gray-400 mb-4">Co-Working • PHP • HTML/CSS • SQL • C# • BDD</p>
-            <!--<a href="projets/multibureau/multibureau.html" class="text-indigo-600 hover:underline">Voir le détail →</a>-->
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-purple-500/60 hover:shadow-purple-500/30 transition">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-purple-500 to-pink-600"></div>
+            <h4 class="text-xl font-semibold text-white mb-2">Multibureau</h4>
+            <p class="text-slate-200 mb-4">Création d'une entreprise virtuel encadrant base de donnée, site web, app WPF, figma, notion...</p>
+            <p class="text-slate-400 mb-4">Co-Working • PHP • HTML/CSS • SQL • C# • BDD</p>
+            <!--<a href="projets/multibureau/multibureau.html" class="text-blue-400 hover:text-purple-400 hover:underline transition">Voir le détail →</a>-->
           </div>
         </div>
       </div>
 
       <!-- Projets Gaming & Esport -->
       <div class="mb-12">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-indigo-600">Gaming & Esport</h2>
+        <h2 class="text-2xl font-bold mb-6 pb-3 border-b border-slate-800 bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent">Gaming & Esport</h2>
         <div class="grid md:grid-cols-1 gap-8">
-
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition flex items-start gap-4">
+          <!-- Oserv -->
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-pink-500/60 hover:shadow-pink-500/30 transition flex items-start gap-4">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-pink-500 to-blue-500"></div>
             <a href="projets/oserv/oserv.html" class="flex-shrink-0">
-              <img src="projets/oserv/oserv.jpg" alt="Logo Oserv" class="w-16 h-16 object-contain rounded" />
+              <img src="projets/oserv/oserv.jpg" alt="Logo Oserv" class="w-16 h-16 object-contain rounded ring-1 ring-slate-700" />
             </a>
             <div>
-              <h4 class="text-xl font-semibold mb-2">Oserv Esport - Chargé de Projet</h4>
-              <p class="text-gray-600 mb-4">Head Of Valorant - Management d'une équipe et encadrement du pôle Valorant.</p>
-              <p class="text-gray-400 mb-4">Organisation de session d'entrainement • Gestion des plannings des joueurs • Communication & Recrutement </p>
-              <a href="projets/oserv/oserv.html" class="text-indigo-600 hover:underline">Voir le détail →</a>
+              <h4 class="text-xl font-semibold text-white mb-2">Oserv Esport - Chargé de Projet</h4>
+              <p class="text-slate-200 mb-4">Head Of Valorant - Management d'une équipe et encadrement du pôle Valorant.</p>
+              <p class="text-slate-400 mb-4">Organisation de session d'entrainement • Gestion des plannings des joueurs • Communication & Recrutement </p>
+              <a href="projets/oserv/oserv.html" class="text-blue-400 hover:text-purple-400 hover:underline transition">Voir le détail →</a>
             </div>
           </div>
-
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition flex items-start gap-4">
+          <!-- Cicadas -->
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-pink-500/60 hover:shadow-pink-500/30 transition flex items-start gap-4">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-pink-500 to-blue-500"></div>
             <a href="projets/cicadas/cicadas.html" class="flex-shrink-0">
-              <img src="projets/cicadas/logo.jpg" alt="Logo Cicadas" class="w-24 h-24 object-contain rounded" />
+              <img src="projets/cicadas/logo.jpg" alt="Logo Cicadas" class="w-24 h-24 object-contain rounded ring-1 ring-slate-700" />
             </a>
             <div>
-              <h4 class="text-xl font-semibold mb-2">Cicadas Gaming - Manager & Assistant Coach</h4>
-              <p class="text-gray-600 mb-4">Manager & Assistant Coach d'une équipe Valorant chez Cicadas Gaming durant quelques mois.</p>
-              <p class="text-gray-400 mb-4">Organisation de session d'entrainement • Gestion des plannings des joueurs • Créations de stratégies </p>
-              <a href="projets/cicadas/cicadas.html" class="text-indigo-600 hover:underline">Voir le détail →</a>
+              <h4 class="text-xl font-semibold text-white mb-2">Cicadas Gaming - Manager & Assistant Coach</h4>
+              <p class="text-slate-200 mb-4">Manager & Assistant Coach d'une équipe Valorant chez Cicadas Gaming durant quelques mois.</p>
+              <p class="text-slate-400 mb-4">Organisation de session d'entrainement • Gestion des plannings des joueurs • Créations de stratégies </p>
+              <a href="projets/cicadas/cicadas.html" class="text-blue-400 hover:text-purple-400 hover:underline transition">Voir le détail →</a>
             </div>
           </div>
-
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition flex items-start gap-4">
+          <!-- Eterny -->
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-pink-500/60 hover:shadow-pink-500/30 transition flex items-start gap-4">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-pink-500 to-blue-500"></div>
             <a href="projets/eterny/eterny.html" class="flex-shrink-0">
-              <img src="projets/eterny/logo.jpg" alt="Logo Eterny" class="w-24 h-24 object-contain rounded" />
+              <img src="projets/eterny/logo.jpg" alt="Logo Eterny" class="w-24 h-24 object-contain rounded ring-1 ring-slate-700" />
             </a>
             <div>
-              <h4 class="text-xl font-semibold mb-2">Eterny Esport - Coach, Manager & Joueur semi-pro</h4>
-              <p class="text-gray-600 mb-4">Joueur, Coach & Manager d'une équipe Valorant d'une structure Esport régulé par la loi 1901.</p>
-              <p class="text-gray-400 mb-4">Organisation de session d'entrainement • Gestion des plannings des joueurs • Créations de stratégies </p>
-              <a href="projets/eterny/eterny.html" class="text-indigo-600 hover:underline">Voir le détail →</a>
+              <h4 class="text-xl font-semibold text-white mb-2">Eterny Esport - Coach, Manager & Joueur semi-pro</h4>
+              <p class="text-slate-200 mb-4">Joueur, Coach & Manager d'une équipe Valorant d'une structure Esport régulé par la loi 1901.</p>
+              <p class="text-slate-400 mb-4">Organisation de session d'entrainement • Gestion des plannings des joueurs • Créations de stratégies </p>
+              <a href="projets/eterny/eterny.html" class="text-blue-400 hover:text-purple-400 hover:underline transition">Voir le détail →</a>
             </div>
           </div>
-
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition flex items-start gap-4">
+          <!-- Pandora -->
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-pink-500/60 hover:shadow-pink-500/30 transition flex items-start gap-4">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-pink-500 to-blue-500"></div>
             <a href="projets/pandora/pandora.html" class="flex-shrink-0">
-              <img src="projets/pandora/pandoralogo.jpg" alt="Logo PandoraUHC" class="w-16 h-16 object-contain rounded" />
+              <img src="projets/pandora/pandoralogo.jpg" alt="Logo PandoraUHC" class="w-16 h-16 object-contain rounded ring-1 ring-slate-700" />
             </a>
             <div>
-              <h4 class="text-xl font-semibold mb-2">PandoraUHC - Modérateur & Helpeur</h4>
-              <p class="text-gray-600 mb-4">Modérateur et Helpeur d'une infrastructure de jeu communautaire sur Minecraft. Projet réalisé sur mon temps libre, à but non-lucratif (CA : ~5 000€)</p>
-              <p class="text-gray-400 mb-4">Assistance Gestion de Projet • Game Design • Testing • Assistance Développement système Anti-Triche</p>
-              <a href="projets/pandora/pandora.html" class="text-indigo-600 hover:underline">Voir le détail →</a>
+              <h4 class="text-xl font-semibold text-white mb-2">PandoraUHC - Modérateur & Helpeur</h4>
+              <p class="text-slate-200 mb-4">Modérateur et Helpeur d'une infrastructure de jeu communautaire sur Minecraft. Projet réalisé sur mon temps libre, à but non-lucratif (CA : ~5 000€)</p>
+              <p class="text-slate-400 mb-4">Assistance Gestion de Projet • Game Design • Testing • Assistance Développement système Anti-Triche</p>
+              <a href="projets/pandora/pandora.html" class="text-blue-400 hover:text-purple-400 hover:underline transition">Voir le détail →</a>
             </div>
           </div>
-
-          <div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition flex items-start gap-4">
+          <!-- Youtube -->
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-pink-500/60 hover:shadow-pink-500/30 transition flex items-start gap-4">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-pink-500 to-blue-500"></div>
             <a href="https://www.youtube.com/@murphyyyx" class="flex-shrink-0">
-              <img src="projets/youtube/youtube.jpg" alt="Logo Youtube" class="w-16 h-16 object-contain rounded" />
+              <img src="projets/youtube/youtube.jpg" alt="Logo Youtube" class="w-16 h-16 object-contain rounded ring-1 ring-slate-700" />
             </a>
             <div>
-              <h4 class="text-xl font-semibold mb-2">Youtube - @murphyyyx</h4>
-              <p class="text-gray-600 mb-4">Projet en continue : création de contenus vidéos visant à retranscrire des parties de jeu, montées et dynamisées pour un rendu attractif.</p>
-              <p class="text-gray-400 mb-4">Montage vidéo • SFX • VFX</p>
-              <a href="https://www.youtube.com/@murphyyyx" class="text-indigo-600 hover:underline">Voir le projet →</a>
+              <h4 class="text-xl font-semibold text-white mb-2">Youtube - @murphyyyx</h4>
+              <p class="text-slate-200 mb-4">Projet en continue : création de contenus vidéos visant à retranscrire des parties de jeu, montées et dynamisées pour un rendu attractif.</p>
+              <p class="text-slate-400 mb-4">Montage vidéo • SFX • VFX</p>
+              <a href="https://www.youtube.com/@murphyyyx" class="text-blue-400 hover:text-purple-400 hover:underline transition">Voir le projet →</a>
+            </div>
+          </div>
+          <!-- Twitch -->
+          <div class="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-lg p-6 pt-7 hover:shadow-lg hover:border-pink-500/60 hover:shadow-pink-500/30 transition flex items-start gap-4">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-pink-500 to-blue-500"></div>
+            <a href="https://www.twitch.tv/mxrphylaw" class="flex-shrink-0">
+              <img src="projets/twitch/pp.png" alt="Logo Twitch" class="w-16 h-16 object-contain rounded ring-1 ring-slate-700" />
+            </a>
+            <div>
+              <h4 class="text-xl font-semibold text-white mb-2">Twitch : @mxrphylaw</h4>
+              <p class="text-slate-200 mb-4">Projet en continue : Stream visant à partager du gameplay ainsi qu'à créer une communauté.</p>
+              <p class="text-slate-400 mb-4">Réglage OBS • Mixage Audio • Social</p>
+              <a href="https://www.twitch.tv/mxrphylaw" class="text-blue-400 hover:text-purple-400 hover:underline transition">Voir le projet →</a>
             </div>
           </div>
         </div>
